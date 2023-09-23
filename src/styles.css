@@ -141,16 +141,20 @@ footer a{
 section {
     max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 40px 0;
 }
 
 section.secondar{
     background-color: rgb(205, 204, 204);
 }
 
+section.instagram-section {
+    padding: 40px 20px;
+}
+
 .grid{
     display: grid;
-    grid-gap: 64px;
+    grid-gap: 35px;
 }
 
 .grid-2-equal-coloums {
@@ -167,7 +171,7 @@ section.secondar{
 
 .img-responsive{
     display: block;
-    max-width: 100%;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -180,6 +184,11 @@ section.secondar{
     margin:30px 0;
 }
 
+.card-header.grid {
+    grid-gap:0;
+    grid-template-columns: 1fr 1fr;
+}
+
 .card-body {
     padding: 30px;
 }
@@ -189,7 +198,7 @@ section.secondar{
 }
 
 .btn {
-    display:block;
+    display: block;
     border-radius: 4px;
     color: white;
     font-weight: 700;
@@ -200,6 +209,15 @@ section.secondar{
     padding: 16px;
     background-color: #1e6b6b;
     text-decoration: none;
+}
+
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+.instagram-embed {
+    margin: 30px 0;
 }
 
 @media (max-width: 900px){
@@ -228,4 +246,11 @@ section.secondar{
         grid-gap:32px;
     }
 
+    .card-header img{
+        display: none;
+    }
+
+    .embed{
+        aspect-ratio: 16/9;
+    }
 }
