@@ -175,6 +175,10 @@ section.instagram-section {
     border-radius: 4px;
 }
 
+.gita {
+    max-height:245px;
+}
+
 .text-center{
     text-align: center;
 }
