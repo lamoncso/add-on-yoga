@@ -157,7 +157,7 @@ section.instagram-section {
     grid-gap: 35px;
 }
 
-.grid-2-equal-coloums {
+.grid-2-equal-colums {
     grid-template-columns: 1fr 1fr;
 }
 
@@ -186,7 +186,7 @@ section.instagram-section {
 
 .card-header.grid {
     grid-gap:0;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.25fr;
 }
 
 .card-body {
@@ -250,7 +250,12 @@ section.instagram-section {
         display: none;
     }
 
-    .embed{
-        aspect-ratio: 16/9;
+    .card-header{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .card-body {
+        padding: 30px 10px;
     }
 }
